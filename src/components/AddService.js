@@ -1,10 +1,11 @@
 import React from 'react'
 import { ContentDetails } from './ContentDetails'
 import { ContentNumber } from './ContentNumber'
+import InputForm from './basic/InputForm'
 
 export const AddService = () => {
   return (
-    <div className='flex flex-col mt-[96px] gap-6'>
+    <div className='flex flex-col mt-[96px] gap-6 max-w-[606px]'>
       <div className='flex flex-col'>
         <span className='text-[#ffffffcc] text-base font-medium'>Tanıtılacak Ürünler</span>
         <span className='font-Inter text-[36px] font-semibold text-white'>{`UGC - Servis/Uygulama Ekle`}</span>
@@ -17,7 +18,7 @@ export const AddService = () => {
               <div>
                 <svg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <g id='Frame 7640'>
-                    <g clip-path='url(#clip0_109_380)'>
+                    <g clipPath='url(#clip0_109_380)'>
                       <rect
                         id='Rectangle 1143'
                         x='28'
@@ -26,15 +27,15 @@ export const AddService = () => {
                         height='28'
                         transform='rotate(90 28 0.5)'
                         fill='white'
-                        fill-opacity='0.2'
+                        fillOpacity='0.2'
                       />
                       <path
                         id='Vector'
                         d='M20 12L14 18L8 12'
                         stroke='white'
-                        stroke-width='2'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
+                        strokeWidth='2'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
                       />
                     </g>
                   </g>
@@ -46,32 +47,13 @@ export const AddService = () => {
                 </svg>
               </div>
             </div>
+            <InputForm label={'Ürün Adı'} placeholder={'placeholder'} />
 
-            <div className='flex flex-col gap-[8px]'>
-              <div>
-                <span className='text-[#ffffffcc] text-base font-medium'>Ürün Adı</span>
-              </div>
-              <div className='flex gap-[8px]'>
-                <input
-                  type='text'
-                  className='px-[15px] py-[13px] w-full h-[43px] text-white rounded-[8px] border-[1.4px] border-[#ffffff33] bg-transparent placeholder:text-[#8F8F8F] placeholder:text-sm'
-                  placeholder='placeholder'
-                />
-              </div>
-            </div>
-
-            <div className='flex flex-col gap-[8px]'>
-              <div>
-                <span className='text-[#ffffffcc] text-base font-medium'>Marka</span>
-              </div>
-              <div className='flex gap-[8px]'>
-                <input
-                  type='text'
-                  className='px-[15px] py-[13px] w-full h-[43px] text-[#8F8F8F] rounded-[8px] border-[1.4px] border-[#ffffff33] bg-transparent placeholder:text-[#8F8F8F] placeholder:text-sm'
-                  placeholder='Mycros Çanta'
-                />
-              </div>
-            </div>
+            <InputForm
+              label={'Marka'}
+              placeholder={'Mycros Çanta'}
+              errorMsg={`POSSIBLE ERROR. Et vitae diam nibh id ultrices nisl nunc aliquam. Sed enim aliquet duis sed nec etiam volutpat ultricies ac.`}
+            />
 
             <div className='flex flex-col gap-[8px]'>
               <span className='text-[#ffffffcc] text-base font-medium'>Ürün Satış Fiyatı</span>
@@ -80,18 +62,7 @@ export const AddService = () => {
               </button>
             </div>
 
-            <div className='flex flex-col gap-[8px]'>
-              <div>
-                <span className='text-[#ffffffcc] text-base font-medium'>Ürün Linki</span>
-              </div>
-              <div className='flex gap-[8px]'>
-                <input
-                  type='text'
-                  className='px-[15px] py-[13px] w-full h-[43px] text-[#8F8F8F] rounded-[8px] border-[1.4px] border-[#ffffff33] bg-transparent placeholder:text-[#8F8F8F] placeholder:text-sm'
-                  placeholder='mycurunlinki.com/urun'
-                />
-              </div>
-            </div>
+            <InputForm label={'Ürün Linki'} placeholder={'mycurunlinki.com/urun'} />
 
             <div className='flex flex-col gap-[8px]'>
               <div>
@@ -104,7 +75,7 @@ export const AddService = () => {
                 >
                   <svg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <g id='Frame 7640'>
-                      <g clip-path='url(#clip0_109_380)'>
+                      <g clipPath='url(#clip0_109_380)'>
                         <rect
                           id='Rectangle 1143'
                           x='28'
@@ -113,15 +84,15 @@ export const AddService = () => {
                           height='28'
                           transform='rotate(90 28 0.5)'
                           fill='white'
-                          fill-opacity='0.2'
+                          fillOpacity='0.2'
                         />
                         <path
                           id='Vector'
                           d='M20 12L14 18L8 12'
                           stroke='white'
-                          stroke-width='2'
-                          stroke-linecap='round'
-                          stroke-linejoin='round'
+                          strokeWidth='2'
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
                         />
                       </g>
                     </g>

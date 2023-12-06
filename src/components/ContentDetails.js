@@ -1,4 +1,6 @@
 import React from 'react'
+import ButtonW from './basic/ButtonW'
+import ButtonT from './basic/ButtonT'
 
 export const ContentDetails = () => {
   return (
@@ -9,7 +11,7 @@ export const ContentDetails = () => {
           <div>
             <svg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <g id='Frame 7640'>
-                <g clip-path='url(#clip0_109_380)'>
+                <g clipPath='url(#clip0_109_380)'>
                   <rect
                     id='Rectangle 1143'
                     x='28'
@@ -18,15 +20,15 @@ export const ContentDetails = () => {
                     height='28'
                     transform='rotate(90 28 0.5)'
                     fill='white'
-                    fill-opacity='0.2'
+                    fillOpacity='0.2'
                   />
                   <path
                     id='Vector'
                     d='M20 12L14 18L8 12'
                     stroke='white'
-                    stroke-width='2'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
+                    strokeWidth='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
                   />
                 </g>
               </g>
@@ -40,16 +42,10 @@ export const ContentDetails = () => {
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>İçerik Türü</span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>İçerik Türü</span>
           <div className='flex gap-[8px]'>
-            <button className='px-[15px] h-[38px] bg-white text-[#232323] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px]'>
-              video
-            </button>
-            <button className='px-[15px] h-[38px] text-[#8F8F8F] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-              Fotoğraf
-            </button>
+            <ButtonW label={'video'} />
+            <ButtonT label={'Fotoğraf'} />
           </div>
         </div>
 
@@ -60,68 +56,40 @@ export const ContentDetails = () => {
             </span>
           </div>
           <div className='flex gap-[8px]'>
-            <button className='px-[15px] h-[38px] bg-white text-[#232323] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px]'>
-              {`Copy Evet, ortak paylaşmak istiyorum`}
-            </button>
-            <button className='px-[15px] h-[38px] text-[#8F8F8F] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-              {`Paylaşım istemiyorum`}
-            </button>
+            <ButtonW label={'Copy Evet, ortak paylaşmak istiyorum'} />
+            <ButtonT label={'Paylaşım istemiyorum'} />
           </div>
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>İçerik Uzunluğu?</span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>İçerik Uzunluğu?</span>
           <div className='flex gap-[8px]'>
-            <button className='px-[15px] h-[38px] bg-white text-[#232323] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px]'>
-              15 Saniye
-            </button>
-            <button className='px-[15px] h-[38px] text-[#8F8F8F] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-              30 Saniye
-            </button>
-            <button className='px-[15px] h-[38px] text-[#8F8F8F] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-              60 Saniye
-            </button>
+            <ButtonW label={'15 Saniye'} />
+            <ButtonT label={'30 Saniye'} />
+            <ButtonT label={'60 Saniye'} />
           </div>
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>Altyazı</span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>Altyazı</span>
           <div className='flex gap-[8px]'>
-            <button className='px-[15px] h-[38px] bg-white text-[#232323] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px]'>
-              Altyazılı
-            </button>
-            <button className='px-[15px] h-[38px] text-[#8F8F8F] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-              Altyazısız
-            </button>
+            <ButtonW label={'Altyazılı'} />
+            <ButtonT label={'Altyazısız'} />
           </div>
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>Müzik</span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>Müzik</span>
           <div className='flex gap-[8px]'>
-            <button className='px-[15px] h-[38px] bg-white text-[#232323] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px]'>
-              Müzikli
-            </button>
-            <button className='px-[15px] h-[38px] text-[#8F8F8F] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-              Müziksiz
-            </button>
+            <ButtonW label={'Müzikli'} />
+            <ButtonT label={'Müziksiz'} />
           </div>
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>Kiminle çalışmak istiyorsunuz?</span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>Kiminle çalışmak istiyorsunuz?</span>
           <div className='flex gap-[8px]'>
-            <button className='px-[15px] h-[38px] bg-white text-[#232323] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px]'>
-              Erkek
-            </button>
+            <ButtonW label={'Erkek'} />
             <button className='px-[15px] h-[38px] text-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
               Kadın
             </button>
@@ -129,15 +97,11 @@ export const ContentDetails = () => {
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>
-              Influencer’ın videoda gözükmesini istiyor musunuz?
-            </span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>
+            Influencer’ın videoda gözükmesini istiyor musunuz?
+          </span>
           <div className='flex gap-[8px]'>
-            <button className='px-[15px] h-[38px] bg-white text-[#232323] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px]'>
-              Evet
-            </button>
+            <ButtonW label={'Evet'} />
             <button className='px-[15px] h-[38px] text-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
               Hayır
             </button>
@@ -145,9 +109,7 @@ export const ContentDetails = () => {
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>İçerik Boyutu</span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>İçerik Boyutu</span>
           <div className='flex gap-[8px]'>
             <div className='px-[15px] py-[14px] bg-white text-[#232323] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px]'>
               <div className='flex flex-col h-full justify-end'>
@@ -185,9 +147,7 @@ export const ContentDetails = () => {
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>{`Yaratıcı üreteceği içerikte neler yapmalı?`}</span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>{`Yaratıcı üreteceği içerikte neler yapmalı?`}</span>
           <div className='flex gap-[8px]'>
             <textarea
               className='px-[15px] py-[13px] h-[160px] w-full gap-[23px] flex items-start text-sm text-[#8F8F8F] border-[1px] rounded-[8px] border-[#E6E6E6] bg-transparent placeholder:text-[#ffffff66]'
@@ -197,9 +157,7 @@ export const ContentDetails = () => {
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>{`Yaratıcı üreteceği içerikte nelerden bahsetmeli?`}</span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>{`Yaratıcı üreteceği içerikte nelerden bahsetmeli?`}</span>
           <div className='flex gap-[8px]'>
             <textarea
               className='px-[15px] py-[13px] h-[117px] w-full gap-[23px] flex items-start text-sm text-[#8F8F8F] border-[1px] rounded-[8px] border-[#E6E6E6] bg-transparent placeholder:text-[#ffffff66]'
@@ -209,9 +167,7 @@ export const ContentDetails = () => {
         </div>
 
         <div className='flex flex-col gap-[8px]'>
-          <div>
-            <span className='text-[#ffffffcc] text-base font-medium'>{`Örnek içerik`}</span>
-          </div>
+          <span className='text-[#ffffffcc] text-base font-medium'>{`Örnek içerik`}</span>
           <div className='flex gap-[8px]'>
             <textarea
               className='px-[15px] py-[13px] h-[68px] w-full gap-[23px] flex items-start text-sm text-[#8F8F8F] border-[1px] rounded-[8px] border-[#E6E6E6] bg-transparent placeholder:text-[#ffffff66]'

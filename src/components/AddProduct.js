@@ -2,10 +2,13 @@ import React from 'react'
 import { ContentDetails } from './ContentDetails'
 import { ContentNumber } from './ContentNumber'
 import InputForm from './basic/InputForm'
+import ButtonW from './basic/ButtonW'
+import ButtonT from './basic/ButtonT'
 
 export const AddProduct = () => {
+  const nums = [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]
   return (
-    <div className='flex flex-col mt-[96px] gap-6'>
+    <div className='flex flex-col mt-[96px] gap-6 max-w-[606px]'>
       <div className='flex flex-col'>
         <span className='text-[#ffffffcc] text-base font-medium'>Tanıtılacak Ürünler</span>
         <span className='font-Inter text-[36px] font-semibold text-white'>{`UGC - Ürün Ekle`}</span>
@@ -18,7 +21,7 @@ export const AddProduct = () => {
               <div>
                 <svg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <g id='Frame 7640'>
-                    <g clip-path='url(#clip0_109_380)'>
+                    <g clipPath='url(#clip0_109_380)'>
                       <rect
                         id='Rectangle 1143'
                         x='28'
@@ -27,15 +30,15 @@ export const AddProduct = () => {
                         height='28'
                         transform='rotate(90 28 0.5)'
                         fill='white'
-                        fill-opacity='0.2'
+                        fillOpacity='0.2'
                       />
                       <path
                         id='Vector'
                         d='M20 12L14 18L8 12'
                         stroke='white'
-                        stroke-width='2'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
+                        strokeWidth='2'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
                       />
                     </g>
                   </g>
@@ -50,7 +53,7 @@ export const AddProduct = () => {
 
             <InputForm label={'Ürün Adı'} placeholder={'placeholder'} errorMsg={'This field is required'} />
 
-            <InputForm label={'Marka'} placeholder={'Mycros Çanta'} errorMsg={''} />
+            <InputForm label={'Marka'} placeholder={'Mycros Çanta'} />
 
             <div className='flex flex-col gap-[8px]'>
               <span className='text-[#ffffffcc] text-base font-medium'>Ürün Satış Fiyatı</span>
@@ -66,15 +69,9 @@ export const AddProduct = () => {
                 <span className='text-[#ffffffcc] text-base font-medium'>Beden Tipi</span>
               </div>
               <div className='flex gap-[8px] '>
-                <button className='px-[15px] h-[38px] bg-white text-[#232323] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px]'>
-                  {`Harf (S,M,L...)`}
-                </button>
-                <button className='px-[15px] h-[38px] text-[#8F8F8F] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  {`Sayı (34,36,42,43)`}
-                </button>
-                <button className='px-[15px] h-[38px] text-[#8F8F8F] text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  {`Ürünün Bedeni Yok`}
-                </button>
+                <ButtonW label={'Harf (S,M,L...)'} />
+                <ButtonT label={'Sayı (34,36,42,43)'} />
+                <ButtonT label={'Ürünün Bedeni Yok'} />
               </div>
             </div>
 
@@ -83,54 +80,16 @@ export const AddProduct = () => {
                 <span className='text-[#ffffffcc] text-base font-medium'>Beden Seçenekleri</span>
               </div>
               <div className='grid grid-cols-8 gap-[6px]'>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  30
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  31
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  32
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  33
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  34
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  35
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  36
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  37
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  38
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  39
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  40
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  41
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  42
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  43
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  44
-                </button>
-                <button className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'>
-                  45
-                </button>
+                {nums.map((num) => {
+                  return (
+                    <button
+                      className='px-[15px] h-[38px] text-black bg-white text-center text-Inter text-[13px] font-medium tracking-[-0.26px] rounded-[10px] border-[1.4px] border-[#ffffff33]'
+                      key={num}
+                    >
+                      {num}
+                    </button>
+                  )
+                })}
               </div>
             </div>
 
@@ -145,7 +104,7 @@ export const AddProduct = () => {
                 >
                   <svg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <g id='Frame 7640'>
-                      <g clip-path='url(#clip0_109_380)'>
+                      <g clipPath='url(#clip0_109_380)'>
                         <rect
                           id='Rectangle 1143'
                           x='28'
@@ -154,15 +113,15 @@ export const AddProduct = () => {
                           height='28'
                           transform='rotate(90 28 0.5)'
                           fill='white'
-                          fill-opacity='0.2'
+                          fillOpacity='0.2'
                         />
                         <path
                           id='Vector'
                           d='M20 12L14 18L8 12'
                           stroke='white'
-                          stroke-width='2'
-                          stroke-linecap='round'
-                          stroke-linejoin='round'
+                          strokeWidth='2'
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
                         />
                       </g>
                     </g>

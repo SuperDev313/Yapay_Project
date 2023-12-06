@@ -20,11 +20,11 @@ const InputForm = ({ label, errorMsg, placeholder }) => {
           onChange={handleInputChange}
           placeholder={placeholder}
           className={
-            'px-[15px] py-[13px] w-full h-[43px] text-white rounded-[8px] border-[1.4px] border-[#ffffff33] bg-transparent placeholder:text-[#8F8F8F] placeholder:text-sm outline-none ' +
-            (!value ? 'border-red' : '')
+            'px-[15px] py-[13px] w-full h-[43px] text-white rounded-[8px] border-[1.4px]  bg-transparent placeholder:text-[#8F8F8F] placeholder:text-sm outline-none ' +
+            (!value ? 'border-[#FF6363]' : 'border-[#ffffff33]')
           }
         />
-        {!value && <span className='text-[#FF6363] text-[13px] font-normal font-Inter'>{errorMsg}</span>}
+        {!value && errorMsg && <span className='text-[#FF6363] text-[13px] font-normal font-Inter'>{errorMsg}</span>}
       </div>
     </div>
   )
