@@ -1,11 +1,16 @@
 import React from 'react'
 import { ContentDetails } from './ContentDetails'
 import { ContentNumber } from './ContentNumber'
+import InputForm from './basic/InputForm'
 
 export const AddProduct = () => {
   return (
-    <div>
-      <div className='flex flex-col bg-[#3c3c3c66] p-[48px] rounded-[36px] mt-[183px] gap-[25px]'>
+    <div className='flex flex-col mt-[96px] gap-6'>
+      <div className='flex flex-col'>
+        <span className='text-[#ffffffcc] text-base font-medium'>Tanıtılacak Ürünler</span>
+        <span className='font-Inter text-[36px] font-semibold text-white'>{`UGC - Ürün Ekle`}</span>
+      </div>
+      <div className='flex flex-col bg-[#3c3c3c66] p-[48px] rounded-[36px] gap-[25px]'>
         <div className='p-[48px] border-[1px] border-[#ffffff33] bg-[#ffffff33] rounded-[22px]'>
           <div className='flex flex-col gap-[14px] min-w-[414px]'>
             <div className='flex gap-6 items-center'>
@@ -43,31 +48,9 @@ export const AddProduct = () => {
               </div>
             </div>
 
-            <div className='flex flex-col gap-[8px]'>
-              <div>
-                <span className='text-[#ffffffcc] text-base font-medium'>Ürün Adı</span>
-              </div>
-              <div className='flex gap-[8px]'>
-                <input
-                  type='text'
-                  className='px-[15px] py-[13px] w-full h-[43px] text-white rounded-[8px] border-[1.4px] border-[#ffffff33] bg-transparent placeholder:text-[#8F8F8F] placeholder:text-sm'
-                  placeholder='placeholder'
-                />
-              </div>
-            </div>
+            <InputForm label={'Ürün Adı'} placeholder={'placeholder'} errorMsg={'This field is required'} />
 
-            <div className='flex flex-col gap-[8px]'>
-              <div>
-                <span className='text-[#ffffffcc] text-base font-medium'>Marka</span>
-              </div>
-              <div className='flex gap-[8px]'>
-                <input
-                  type='text'
-                  className='px-[15px] py-[13px] w-full h-[43px] text-[#8F8F8F] rounded-[8px] border-[1.4px] border-[#ffffff33] bg-transparent placeholder:text-[#8F8F8F] placeholder:text-sm'
-                  placeholder='Mycros Çanta'
-                />
-              </div>
-            </div>
+            <InputForm label={'Marka'} placeholder={'Mycros Çanta'} errorMsg={''} />
 
             <div className='flex flex-col gap-[8px]'>
               <span className='text-[#ffffffcc] text-base font-medium'>Ürün Satış Fiyatı</span>
@@ -76,18 +59,7 @@ export const AddProduct = () => {
               </button>
             </div>
 
-            <div className='flex flex-col gap-[8px]'>
-              <div>
-                <span className='text-[#ffffffcc] text-base font-medium'>Ürün Linki</span>
-              </div>
-              <div className='flex gap-[8px]'>
-                <input
-                  type='text'
-                  className='px-[15px] py-[13px] w-full h-[43px] text-[#8F8F8F] rounded-[8px] border-[1.4px] border-[#ffffff33] bg-transparent placeholder:text-[#8F8F8F] placeholder:text-sm'
-                  placeholder='mycurunlinki.com/urun'
-                />
-              </div>
-            </div>
+            <InputForm label={'Ürün Linki'} placeholder={'mycurunlinki.com/urun'} errorMsg={''} />
 
             <div className='flex flex-col gap-[8px]'>
               <div>
